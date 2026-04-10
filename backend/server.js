@@ -18,7 +18,7 @@ app.post("/analisar", async (req, res) => {
     return res.status(400).json({ erro: "Currículo não enviado." });
   }
 
-  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+  const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
   const prompt = `Você é um especialista em recrutamento e seleção com 10 anos de experiência.
 Analise o currículo abaixo e forneça:
